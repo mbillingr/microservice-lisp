@@ -25,7 +25,7 @@ class Insert(BaseModel):
 async def insert(input: Insert) -> None:
     ENV[input.key] = input.value
 
-
+# Note that the process-local in-memory environment prevents us from scaling this service horizontally!
 ENV = {
     "+": {"type": "primitive", "value": "+"},
     "-": {"type": "primitive", "value": "-"},
