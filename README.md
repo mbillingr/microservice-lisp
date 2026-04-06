@@ -25,7 +25,7 @@ Ok, Why?
 
 Apart from "because I can", it's obviously pointless to implement an interpreter like this. However,
 note that we're also deploying Grafana and Tempo. The point of this exercise was not to create a 
-good interpreter, but to play with the LGTM stack and see how well it works with out-of-the-box tracing.
+good interpreter, but to play with the LGTM stack and see how well it works with out-of-the-box tracing in FastAPI.
 
 Have a look at http://localhost:3000 and marvel at the traces of recursive API calls. In fact, this was
 a great help, even while writing the code.
